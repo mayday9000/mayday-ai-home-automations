@@ -18,8 +18,8 @@ const BookingSection = () => {
   }, []);
 
   return (
-    <section id="calendly" className="py-12 sm:py-16 lg:py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
+    <section id="calendly" className="py-12 sm:py-16 lg:py-20 bg-gradient-subtle overflow-x-hidden">
+      <div className="container mx-auto px-4 sm:px-6 max-w-4xl overflow-x-hidden">
         <div className="text-center mb-8 sm:mb-10 lg:mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-6 px-4 sm:px-0">
             Book Your Free Strategy Call
@@ -29,11 +29,16 @@ const BookingSection = () => {
           </p>
         </div>
         
-        <div className="bg-card rounded-2xl sm:rounded-3xl shadow-card p-4 sm:p-6 lg:p-8 mx-4 sm:mx-0">
+        <div className="bg-card rounded-2xl sm:rounded-3xl shadow-card p-2 sm:p-6 lg:p-8 mx-4 sm:mx-0 overflow-hidden">
           <div 
-            className="calendly-inline-widget" 
+            className="calendly-inline-widget w-full" 
             data-url="https://calendly.com/masondavisai?hide_landing_page_details=1" 
-            style={{minWidth: '280px', height: '600px'}}
+            style={{
+              minWidth: '100%',
+              width: '100%',
+              height: '600px',
+              maxWidth: '100%'
+            }}
           ></div>
         </div>
       </div>
