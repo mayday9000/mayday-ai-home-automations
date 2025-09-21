@@ -41,7 +41,11 @@ const Navbar = () => {
           {/* Logo */}
           <button
             onClick={scrollToTop}
-            className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors duration-200"
+            className={`text-2xl font-bold transition-all duration-200 ${
+              scrolled 
+                ? 'text-primary hover:text-primary/80' 
+                : 'text-primary hover:text-primary/80 [text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white]'
+            }`}
           >
             Mayday AI
           </button>
