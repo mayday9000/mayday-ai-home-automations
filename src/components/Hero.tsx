@@ -60,18 +60,18 @@ const Hero = () => {
       className="min-h-screen bg-gradient-hero md:hover:bg-transparent transition-all duration-300 ease-in-out flex items-center justify-center px-4 sm:px-6 py-16 sm:py-20 relative overflow-hidden"
       style={spotlightStyle}
     >
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="text-center lg:text-left order-2 lg:order-1">
+      <div className="container mx-auto max-w-6xl text-center lg:text-left">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center justify-items-center lg:justify-items-start">
+          <div className="w-full max-w-2xl order-2 lg:order-1">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight">
               Never Miss a Call. 
               <span className="block">Never Miss a Job.</span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-primary-foreground/90 mb-6 lg:mb-8 leading-relaxed px-4 sm:px-0">
+            <p className="text-base sm:text-lg lg:text-xl text-primary-foreground/90 mb-6 lg:mb-8 leading-relaxed">
               Mayday AI builds smart automation systems for home service companies — 
               so you can answer every lead, keep crews dispatched, and stay busy year-round.
             </p>
-            <div className="relative px-4 sm:px-0">
+            <div className="relative">
               {/* Mobile gradient highlight behind button */}
               <div className="absolute inset-0 md:hidden bg-gradient-to-r from-transparent via-white/10 to-transparent blur-xl scale-150 -z-10"></div>
               
