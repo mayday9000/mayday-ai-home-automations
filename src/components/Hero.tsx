@@ -57,40 +57,40 @@ const Hero = () => {
   return (
     <section 
       ref={heroRef}
-      className="min-h-screen bg-gradient-hero md:hover:bg-transparent transition-all duration-300 ease-in-out flex items-center justify-center px-6 py-20 relative overflow-hidden"
+      className="min-h-screen bg-gradient-hero md:hover:bg-transparent transition-all duration-300 ease-in-out flex items-center justify-center px-4 sm:px-6 py-16 sm:py-20 relative overflow-hidden"
       style={spotlightStyle}
     >
       <div className="container mx-auto max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="text-center lg:text-left order-2 lg:order-1">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight">
               Never Miss a Call. 
               <span className="block">Never Miss a Job.</span>
             </h1>
-            <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-primary-foreground/90 mb-6 lg:mb-8 leading-relaxed px-4 sm:px-0">
               Mayday AI builds smart automation systems for home service companies — 
               so you can answer every lead, keep crews dispatched, and stay busy year-round.
             </p>
-            <div className="relative">
+            <div className="relative px-4 sm:px-0">
               {/* Mobile gradient highlight behind button */}
               <div className="absolute inset-0 md:hidden bg-gradient-to-r from-transparent via-white/10 to-transparent blur-xl scale-150 -z-10"></div>
               
               <Button 
                 size="lg"
                 onClick={scrollToCalendly}
-                className="bg-white text-primary hover:bg-primary-foreground/95 shadow-primary text-lg px-8 py-6 font-semibold relative z-10"
+                className="bg-white text-primary hover:bg-primary-foreground/95 shadow-primary text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 font-semibold relative z-10 w-full sm:w-auto"
               >
                 Book a Free Strategy Call
               </Button>
             </div>
           </div>
           
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative">
               <img
                 src={profileImage}
                 alt="Business Owner Profile"
-                className="w-80 h-80 rounded-full object-cover shadow-soft border-4 border-white/20"
+                className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-soft border-4 border-white/20"
               />
               <div className="absolute inset-0 rounded-full bg-gradient-primary/20"></div>
             </div>

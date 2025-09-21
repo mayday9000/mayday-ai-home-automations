@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -36,12 +37,12 @@ const Navbar = () => {
         ? 'bg-background/95 backdrop-blur-md shadow-soft border-b border-border/50' 
         : 'bg-transparent'
     }`}>
-      <div className="container mx-auto px-6 max-w-6xl">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <button
             onClick={scrollToTop}
-            className={`text-2xl font-bold transition-all duration-200 ${
+            className={`text-lg sm:text-xl lg:text-2xl font-bold transition-all duration-200 ${
               scrolled 
                 ? 'text-primary hover:text-primary/80' 
                 : 'text-primary hover:text-primary/80 [text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white]'
@@ -71,16 +72,8 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <Button
-              onClick={() => scrollToSection('calendly')}
-              size="sm"
-              className="bg-gradient-primary text-white hover:shadow-primary transition-all duration-300"
-            >
-              Book Call
-            </Button>
-          </div>
+          {/* Mobile Menu */}
+          <MobileMenu scrollToSection={scrollToSection} scrollToTop={scrollToTop} />
         </div>
       </div>
     </nav>

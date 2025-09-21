@@ -18,22 +18,22 @@ const BookingSection = () => {
   }, []);
 
   return (
-    <section id="calendly" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-6 max-w-4xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+    <section id="calendly" className="py-12 sm:py-16 lg:py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 lg:mb-6 px-4 sm:px-0">
             Book Your Free Strategy Call
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground px-4 sm:px-0">
             Let's discuss how Mayday AI can transform your home service business
           </p>
         </div>
         
-        <div className="bg-card rounded-3xl shadow-card p-8">
+        <div className="bg-card rounded-2xl sm:rounded-3xl shadow-card p-4 sm:p-6 lg:p-8 mx-4 sm:mx-0">
           <div 
             className="calendly-inline-widget" 
             data-url="https://calendly.com/masondavisai?hide_landing_page_details=1" 
-            style={{minWidth: '320px', height: '700px'}}
+            style={{minWidth: '280px', height: '600px'}}
           ></div>
         </div>
       </div>
