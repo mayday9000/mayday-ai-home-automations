@@ -16,7 +16,7 @@ const CalendlyEmbed = () => {
         <div className="bg-card rounded-3xl shadow-card p-8">
           <div 
             className="calendly-inline-widget" 
-            data-url="https://calendly.com/masondavisai" 
+            data-url="https://calendly.com/masondavisai?hide_landing_page_details=1" 
             style={{minWidth: '320px', height: '700px'}}
           ></div>
         </div>
