@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-6 py-20">
+    <section className="min-h-screen bg-gradient-hero hover:bg-gradient-hero-hover transition-all duration-300 ease-in-out flex items-center justify-center px-6 py-20">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
