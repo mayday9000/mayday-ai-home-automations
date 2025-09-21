@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import WhoItsFor from "../components/WhoItsFor";
 import HowItWorks from "../components/HowItWorks";
-import CalendlyEmbed from "../components/CalendlyEmbed";
+import BookingSection from "../components/BookingSection";
 import About from "../components/About";
 import MarketValidation from "../components/MarketValidation";
 import Footer from "../components/Footer";
@@ -22,7 +22,7 @@ const Index = () => {
       
       <HowItWorks />
       
-      <CalendlyEmbed />
+      <BookingSection />
       
       <section id="about">
         <About />
