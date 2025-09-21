@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import WhoItsFor from "../components/WhoItsFor";
 import HowItWorks from "../components/HowItWorks";
 import CalendlyEmbed from "../components/CalendlyEmbed";
 import About from "../components/About";
@@ -14,6 +15,8 @@ const Index = () => {
       <section id="services">
         <Services />
       </section>
+      
+      <WhoItsFor />
       
       <HowItWorks />
       

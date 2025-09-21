@@ -5,11 +5,11 @@ const About = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-center lg:mr-8">
             <img
               src={profileImage}
               alt="Founder Profile"
-              className="w-64 h-64 rounded-2xl object-cover shadow-card"
+              className="w-64 h-64 rounded-full object-cover shadow-card"
             />
           </div>
           

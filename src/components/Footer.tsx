@@ -55,7 +55,7 @@ const Footer = () => {
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/80">
-            © 2025 Mayday AI. Retainers include hosting, monitoring, and regular system improvements.
+            © 2025 Mayday AI.
           </p>
         </div>
       </div>
