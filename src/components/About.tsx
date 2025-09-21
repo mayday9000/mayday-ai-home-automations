@@ -14,7 +14,7 @@ const About = () => {
           </div>
           
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-center">
               Why Mayday AI?
             </h2>
             <div className="prose prose-lg max-w-none">
