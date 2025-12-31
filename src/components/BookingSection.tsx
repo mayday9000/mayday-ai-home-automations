@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const BookingSection = () => {
   useEffect(() => {
@@ -26,6 +27,15 @@ const BookingSection = () => {
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-muted-foreground px-4 sm:px-0">
             Let's discuss how Mayday AI can transform your home service business
+          </p>
+          <p className="text-sm text-muted-foreground mt-4 px-4 sm:px-0">
+            By booking an appointment, you agree to our{" "}
+            <Link 
+              to="/terms-and-conditions-privacy-policy" 
+              className="underline hover:text-foreground transition-colors"
+            >
+              Terms of Service and Privacy Policy
+            </Link>
           </p>
         </div>
         
