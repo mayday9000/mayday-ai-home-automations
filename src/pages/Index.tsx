@@ -6,6 +6,7 @@ import HowItWorks from "../components/HowItWorks";
 import BookingSection from "../components/BookingSection";
 import About from "../components/About";
 import MarketValidation from "../components/MarketValidation";
+import SmsCallout from "../components/SmsCallout";
 import Footer from "../components/Footer";
 
 const Index = () => {
@@ -29,6 +30,8 @@ const Index = () => {
       </section>
       
       <MarketValidation />
+
+      <SmsCallout />
       
       <Footer />
     </div>
