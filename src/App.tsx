@@ -9,6 +9,7 @@ import TermsAndPrivacy from "./pages/TermsAndPrivacy";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import SmsSignup from "./pages/SmsSignup";
+import Unsubscribe from "./pages/Unsubscribe";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/sms-signup" element={<SmsSignup />} />
           <Route path="/terms-and-conditions-privacy-policy" element={<TermsAndPrivacy />} />
+          <Route path="/unsubscribe" element={<Unsubscribe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
