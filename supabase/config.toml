@@ -1,1 +1,4 @@
 project_id = "gcgmzfdyfauguvfetpdb"
+
+[functions.submit-sms-consent]
+verify_jwt = false
