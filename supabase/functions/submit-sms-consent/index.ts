@@ -105,13 +105,24 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    // Fire-and-forget emails through Lovable's transactional email function (if scaffolded)
+    // Fire-and-forget emails through Lovable's transactional email function
+    const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
+    const ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY")!;
     const sendEmail = async (templateName: string, recipientEmail: string, templateData: Record<string, unknown>, idempotencyKey: string) => {
       try {
-        const { error } = await supabase.functions.invoke("send-transactional-email", {
-          body: { templateName, recipientEmail, idempotencyKey, templateData },
+        const res = await fetch(`${SUPABASE_URL}/functions/v1/send-transactional-email`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${ANON_KEY}`,
+            "apikey": ANON_KEY,
+          },
+          body: JSON.stringify({ templateName, recipientEmail, idempotencyKey, templateData }),
         });
-        if (error) console.warn(`Email send (${templateName}) warning:`, error);
+        if (!res.ok) {
+          const text = await res.text();
+          console.warn(`Email send (${templateName}) failed: ${res.status} ${text}`);
+        }
       } catch (e) {
         console.warn(`Email send (${templateName}) failed:`, e);
       }
