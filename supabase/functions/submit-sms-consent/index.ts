@@ -107,7 +107,7 @@ Deno.serve(async (req: Request) => {
 
     // Fire-and-forget emails through Lovable's transactional email function
     const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
-    const ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY")!;
+    const ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdjZ216ZmR5ZmF1Z3V2ZmV0cGRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk3MzM4MDAsImV4cCI6MjA5NTMwOTgwMH0.5VLnzuQybumkuJdI4ntfB6xqZpRlL8z9iVS6fXh3ht0";
     const sendEmail = async (templateName: string, recipientEmail: string, templateData: Record<string, unknown>, idempotencyKey: string) => {
       try {
         const res = await fetch(`${SUPABASE_URL}/functions/v1/send-transactional-email`, {
