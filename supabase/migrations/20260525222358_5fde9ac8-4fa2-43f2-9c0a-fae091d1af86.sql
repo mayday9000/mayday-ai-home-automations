@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Anyone can insert SMS consents" ON public.sms_consents;
