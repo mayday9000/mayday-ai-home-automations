@@ -9,6 +9,7 @@ import TermsAndPrivacy from "./pages/TermsAndPrivacy";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import SmsSignup from "./pages/SmsSignup";
+import Unsubscribe from "./pages/Unsubscribe";
 
 const queryClient = new QueryClient();
 
