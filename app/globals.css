@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand text-cream-bright;
+  }
+
+  /* Visible focus everywhere, brand-colored */
+  :focus-visible {
+    outline: 3px solid #d9531e;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-7 py-4 text-lg font-bold text-cream-bright shadow-cta transition-colors hover:bg-brand-dark active:bg-brand-deep;
+  }
+
+  .btn-quiet {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-ink/15 px-7 py-4 text-lg font-semibold text-ink transition-colors hover:border-brand hover:text-brand;
+  }
+}
