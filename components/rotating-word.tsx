@@ -12,22 +12,18 @@ const INDUSTRIES = [
 ];
 
 /**
- * Rotates the industry phrase in the headline. Screen readers get a stable
- * generic phrase; the rotation is purely visual and pauses for
- * prefers-reduced-motion users.
+ * Rotates the industry phrase in the headline. All phrases are stacked in one
+ * grid cell so the box is always as wide as the longest phrase — rotation
+ * never causes layout shift. Screen readers get a stable generic phrase, and
+ * the rotation pauses for prefers-reduced-motion users.
  */
 export function RotatingIndustry() {
   const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const interval = setInterval(() => {
-      setVisible(false);
-      setTimeout(() => {
-        setIndex((i) => (i + 1) % INDUSTRIES.length);
-        setVisible(true);
-      }, 220);
+      setIndex((i) => (i + 1) % INDUSTRIES.length);
     }, 2600);
     return () => clearInterval(interval);
   }, []);
@@ -35,13 +31,17 @@ export function RotatingIndustry() {
   return (
     <>
       <span className="sr-only">business</span>
-      <span
-        aria-hidden="true"
-        className={`inline-block text-brand transition-all duration-200 ease-out ${
-          visible ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
-        }`}
-      >
-        {INDUSTRIES[index]}
+      <span aria-hidden="true" className="inline-grid justify-items-center align-baseline">
+        {INDUSTRIES.map((phrase, i) => (
+          <span
+            key={phrase}
+            className={`col-start-1 row-start-1 whitespace-nowrap text-brand transition-transform duration-200 ease-out ${
+              i === index ? "visible translate-y-0" : "invisible translate-y-2"
+            }`}
+          >
+            {phrase}
+          </span>
+        ))}
       </span>
     </>
   );

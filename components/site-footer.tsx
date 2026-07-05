@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="mx-auto flex w-full max-w-content flex-col gap-8 px-5 py-12 sm:px-8 md:flex-row md:items-start md:justify-between">
         <div>
           <p className="font-display text-lg font-extrabold tracking-tight">
-            Mayday<span className="text-brand"> AI</span>
+            Mayday<span className="text-brand-deep"> AI</span>
           </p>
           <p className="mt-2 max-w-xs text-sm text-ink-soft">{TAGLINE}</p>
           <p className="mt-4 text-sm text-ink-soft">Cary, North Carolina</p>

@@ -37,12 +37,12 @@ export function RoiCalculator() {
   const weekly = Math.round(monthly / WEEKS_PER_MONTH);
 
   return (
-    <section id="calculator" className="bg-brand text-cream-bright">
+    <section id="calculator" className="bg-brand-dark text-cream-bright">
       <div className="mx-auto w-full max-w-content px-5 py-16 sm:px-8 sm:py-24">
         <h2 className="mx-auto max-w-3xl text-center font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl">
           How much is your phone leaking right now?
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-relaxed text-cream-bright/85">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-relaxed text-cream-bright">
           Your numbers, deliberately conservative math. We assume most missed calls were
           never going to book — and it still adds up fast.
         </p>
@@ -91,7 +91,7 @@ export function RoiCalculator() {
             <div>
               <label htmlFor="roi-missed" className="mb-1.5 block text-sm font-bold">
                 Calls you miss per week{" "}
-                <span className="font-display text-lg font-extrabold text-brand">{missedPerWeek}</span>
+                <span className="font-display text-lg font-extrabold text-brand-deep">{missedPerWeek}</span>
               </label>
               <input
                 id="roi-missed"
@@ -142,7 +142,7 @@ export function RoiCalculator() {
 
         <div className="mx-auto mt-10 flex max-w-xl flex-col items-center gap-4 text-center">
           <LeadCtaButton className="inline-flex items-center justify-center gap-2 rounded-xl bg-ink px-7 py-4 text-lg font-bold text-cream-bright transition-colors hover:bg-ink/85" />
-          <p className="text-sm text-cream-bright/75">
+          <p className="text-sm text-cream-bright">
             Two to three recovered jobs a month typically pays for the system several times over.
           </p>
         </div>

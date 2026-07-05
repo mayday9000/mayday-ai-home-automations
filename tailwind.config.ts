@@ -11,6 +11,7 @@ const config: Config = {
           dark: "#B54217",
           deep: "#8F3412",
           tint: "#FBE9DF",
+          bright: "#F0824E", // for orange text on dark backgrounds (WCAG AA)
         },
         cream: {
           DEFAULT: "#FAF4EA",
@@ -20,7 +21,7 @@ const config: Config = {
         ink: {
           DEFAULT: "#231A13",
           soft: "#5C4F44",
-          faint: "#8A7B6E",
+          faint: "#6C5E51",
         },
       },
       fontFamily: {

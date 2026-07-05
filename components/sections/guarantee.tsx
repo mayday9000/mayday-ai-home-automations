@@ -5,7 +5,7 @@ export function Guarantee() {
     <section id="guarantee" className="bg-ink text-cream">
       <div className="mx-auto w-full max-w-content px-5 py-16 sm:px-8 sm:py-24">
         <div className="mx-auto max-w-3xl rounded-3xl border-2 border-brand bg-ink p-8 text-center sm:p-12">
-          <p className="text-xs font-bold uppercase tracking-widest text-brand">
+          <p className="text-xs font-bold uppercase tracking-widest text-brand-bright">
             100% performance guarantee
           </p>
           <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-cream-bright sm:text-4xl">

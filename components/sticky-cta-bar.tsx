@@ -37,7 +37,7 @@ export function StickyCtaBar() {
         <a
           href={`tel:${PHONE_TEL}`}
           tabIndex={show ? 0 : -1}
-          className="flex flex-1 items-center justify-center rounded-xl border-2 border-brand px-4 py-3 text-base font-bold text-brand"
+          className="flex flex-1 items-center justify-center rounded-xl border-2 border-brand-dark px-4 py-3 text-base font-bold text-brand-dark"
         >
           Call Now
         </a>
@@ -45,7 +45,7 @@ export function StickyCtaBar() {
           type="button"
           onClick={open}
           tabIndex={show ? 0 : -1}
-          className="flex-1 rounded-xl bg-brand px-4 py-3 text-base font-bold text-cream-bright shadow-cta"
+          className="flex-1 rounded-xl bg-brand-dark px-4 py-3 text-base font-bold text-cream-bright shadow-cta"
         >
           Get a Callback
         </button>
