@@ -12,10 +12,16 @@ const INDUSTRIES = [
 ];
 
 /**
- * Rotates the industry phrase in the headline. All phrases are stacked in one
- * grid cell so the box is always as wide as the longest phrase — rotation
- * never causes layout shift. Screen readers get a stable generic phrase, and
- * the rotation pauses for prefers-reduced-motion users.
+ * Rotating "Your {industry}" headline lead. All variants are stacked in one
+ * grid cell so rotation never causes layout shift, and the animation is
+ * transform-only so text is never rendered at partial opacity.
+ *
+ * Desktop: each variant is a full line ("Your plumbing company") centered
+ * independently, so the headline is always optically centered. Mobile: the
+ * phrase box flows inline with the rest of the headline.
+ *
+ * Screen readers get a stable generic phrase; rotation pauses for
+ * prefers-reduced-motion users.
  */
 export function RotatingIndustry() {
   const [index, setIndex] = useState(0);
@@ -28,18 +34,32 @@ export function RotatingIndustry() {
     return () => clearInterval(interval);
   }, []);
 
+  const itemClass = (active: boolean) =>
+    `col-start-1 row-start-1 whitespace-nowrap transition-transform duration-200 ease-out ${
+      active ? "visible translate-y-0" : "invisible translate-y-2"
+    }`;
+
   return (
     <>
-      <span className="sr-only">business</span>
-      <span aria-hidden="true" className="inline-grid justify-items-center align-baseline">
+      <span className="sr-only">Your business</span>
+
+      {/* Mobile: inline phrase box */}
+      <span aria-hidden="true" className="sm:hidden">
+        Your{" "}
+        <span className="inline-grid justify-items-center align-baseline">
+          {INDUSTRIES.map((phrase, i) => (
+            <span key={phrase} className={`${itemClass(i === index)} text-brand`}>
+              {phrase}
+            </span>
+          ))}
+        </span>
+      </span>
+
+      {/* Desktop: full centered line per variant */}
+      <span aria-hidden="true" className="hidden sm:grid justify-items-center">
         {INDUSTRIES.map((phrase, i) => (
-          <span
-            key={phrase}
-            className={`col-start-1 row-start-1 whitespace-nowrap text-brand transition-transform duration-200 ease-out ${
-              i === index ? "visible translate-y-0" : "invisible translate-y-2"
-            }`}
-          >
-            {phrase}
+          <span key={phrase} className={itemClass(i === index)}>
+            Your <span className="text-brand">{phrase}</span>
           </span>
         ))}
       </span>

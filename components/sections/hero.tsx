@@ -13,12 +13,11 @@ export function Hero() {
       </p>
 
       <h1 className="mx-auto max-w-4xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-        Your <RotatingIndustry />
-        <br className="hidden sm:block" /> never misses a call again.
+        <RotatingIndustry /> never misses a call again.
       </h1>
 
       <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft sm:text-xl">
-        Mayday answers in seconds — nights, weekends, mid-job. It qualifies the caller, books the
+        Mayday answers in seconds: nights, weekends, mid-job. It qualifies the caller, books the
         appointment, and puts real emergencies straight through to you.{" "}
         <strong className="text-ink">Your team handles business hours. Mayday catches the rest.</strong>
       </p>
@@ -30,7 +29,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 text-base font-semibold text-ink-soft underline decoration-brand/40 underline-offset-4 hover:text-brand"
         >
           <PhoneIcon />
-          Or call us now — our AI answers: {PHONE_DISPLAY}
+          Or call us now. Our AI answers: {PHONE_DISPLAY}
         </a>
       </div>
 
@@ -52,7 +51,7 @@ export function Hero() {
           ))}
         </ul>
         <p className="mt-5 text-sm text-ink-faint">
-          Backed by a <a href="#guarantee" className="font-semibold text-brand-deep underline decoration-brand/40 underline-offset-4 hover:text-brand">100% performance guarantee</a> — if it doesn&rsquo;t capture every after-hours lead, you don&rsquo;t pay.
+          Backed by a <a href="#guarantee" className="font-semibold text-brand-deep underline decoration-brand/40 underline-offset-4 hover:text-brand">100% performance guarantee</a>: if it doesn&rsquo;t capture every after-hours lead, you don&rsquo;t pay.
         </p>
       </div>
     </section>

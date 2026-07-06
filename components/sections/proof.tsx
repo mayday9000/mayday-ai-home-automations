@@ -16,21 +16,21 @@ const WORKED_WITH = [
 const TESTIMONIAL_SLOTS = [
   {
     quote:
-      "[Testimonial slot — e.g. how many after-hours calls Mayday answered in the first month, and what that meant in booked work.]",
+      "[Testimonial slot: e.g. how many after-hours calls Mayday answered in the first month, and what that meant in booked work.]",
     name: "[Client name]",
-    detail: "Owner — home services company",
+    detail: "Owner, home services company",
   },
   {
     quote:
-      "[Testimonial slot — e.g. front-desk experience: what changed during lunch rushes and double-ring moments.]",
+      "[Testimonial slot: e.g. front-desk experience, what changed during lunch rushes and double-ring moments.]",
     name: "[Client name]",
-    detail: "Practice manager — dental / med spa",
+    detail: "Practice manager, dental / med spa",
   },
   {
     quote:
-      "[Testimonial slot — e.g. intake result: consultations booked from calls that used to hit voicemail.]",
+      "[Testimonial slot: e.g. intake result, consultations booked from calls that used to hit voicemail.]",
     name: "[Client name]",
-    detail: "Partner — professional services firm",
+    detail: "Partner, professional services firm",
   },
 ];
 
@@ -67,7 +67,7 @@ export function Proof() {
           ))}
         </div>
 
-        <CtaBand proof="The demo call is the proof — hear exactly what your customers would hear, in the next 60 seconds." />
+        <CtaBand proof="The demo call is the proof: hear exactly what your customers would hear, in the next 60 seconds." />
       </div>
     </section>
   );

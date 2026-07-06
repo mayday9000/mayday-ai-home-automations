@@ -4,12 +4,12 @@ const STEPS = [
   {
     number: "1",
     title: "We build it around your business",
-    body: "Your services, your service area, your booking rules, your calendar. Your phone number and your team's workflow don't change — Mayday just catches what they can't.",
+    body: "Your services, your service area, your booking rules, your calendar. Your phone number and your team's workflow don't change. Mayday just catches what they can't.",
   },
   {
     number: "2",
     title: "It answers everything you can't",
-    body: "Every call picked up in seconds, 24/7. It answers real questions, qualifies the caller, books straight into your calendar — and routes true emergencies to a human immediately.",
+    body: "Every call picked up in seconds, 24/7. It answers real questions, qualifies the caller, books straight into your calendar, and routes true emergencies to a human immediately.",
   },
   {
     number: "3",
@@ -43,7 +43,7 @@ export function HowItWorks() {
         ))}
       </ol>
 
-      <CtaBand proof="Website chat and “Open 24 Hours” on your Google Business Profile are included in the build." />
+      <CtaBand proof="Website chat and an “Open 24 Hours” Google Business Profile are included in the build." />
     </section>
   );
 }

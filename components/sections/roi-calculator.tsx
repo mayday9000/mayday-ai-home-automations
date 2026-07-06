@@ -44,7 +44,7 @@ export function RoiCalculator() {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-relaxed text-cream-bright">
           Your numbers, deliberately conservative math. We assume most missed calls were
-          never going to book — and it still adds up fast.
+          never going to book, and it still adds up fast.
         </p>
 
         <div className="mx-auto mt-12 grid max-w-4xl gap-6 rounded-3xl bg-cream-bright p-6 text-ink shadow-2xl sm:p-10 md:grid-cols-2 md:gap-10">
@@ -134,7 +134,7 @@ export function RoiCalculator() {
             </div>
             <p className="mt-6 text-xs leading-relaxed text-cream/50">
               Assumes only {Math.round(preset.captureRate * 100)}% of missed calls would have
-              become paying customers at your average value — on purpose. The real number is
+              become paying customers at your average value, on purpose. The real number is
               often higher.
             </p>
           </div>

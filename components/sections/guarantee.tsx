@@ -18,7 +18,7 @@ export function Guarantee() {
             lead.
           </p>
           <p className="mx-auto mt-4 max-w-xl leading-relaxed text-cream/60">
-            We can only make this offer because missed-call recovery is measurable — you&rsquo;ll see
+            We can only make this offer because missed-call recovery is measurable: you&rsquo;ll see
             every answered call and every captured lead in your log.
           </p>
         </div>

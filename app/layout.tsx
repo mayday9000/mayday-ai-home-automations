@@ -17,11 +17,11 @@ const sans = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: `${SITE_NAME} — Never Miss Another Call`,
+  title: `${SITE_NAME} | Never Miss Another Call`,
   description:
-    "Mayday AI answers every call your business can't — 24/7. It qualifies callers, books appointments, and routes emergencies to a human. " + TAGLINE,
+    "Mayday AI answers every call your business can't, 24/7. It qualifies callers, books appointments, and routes emergencies to a human. " + TAGLINE,
   openGraph: {
-    title: `${SITE_NAME} — Never Miss Another Call`,
+    title: `${SITE_NAME} | Never Miss Another Call`,
     description:
       "An AI receptionist that catches every call you'd otherwise miss. Your team handles business hours; Mayday catches the rest.",
     url: SITE_URL,

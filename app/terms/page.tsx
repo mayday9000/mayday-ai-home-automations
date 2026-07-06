@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LegalContact, LegalPage } from "@/components/legal";
 
-export const metadata: Metadata = { title: "Terms of Service — Mayday AI" };
+export const metadata: Metadata = { title: "Terms of Service | Mayday AI" };
 
 export default function Terms() {
   return (

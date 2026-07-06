@@ -66,7 +66,7 @@ export function LeadModalProvider({ children }: { children: React.ReactNode }) {
 
     const digits = payload.phone.replace(/\D/g, "");
     if (!(digits.length === 10 || (digits.length === 11 && digits.startsWith("1")))) {
-      setError("That phone number doesn't look right — double-check it so our AI can reach you.");
+      setError("That phone number doesn't look right. Double-check it so our AI can reach you.");
       return;
     }
 
@@ -131,8 +131,7 @@ export function LeadModalProvider({ children }: { children: React.ReactNode }) {
                 required
                 maxLength={120}
                 autoComplete="name"
-                className="w-full rounded-xl border-2 border-ink/15 bg-cream-bright px-4 py-3 text-base placeholder:text-ink-faint focus:border-brand"
-                placeholder="Sam Rivera"
+                className="w-full rounded-xl border-2 border-ink/15 bg-cream-bright px-4 py-3 text-base focus:border-brand"
               />
             </div>
             <div>
@@ -146,8 +145,7 @@ export function LeadModalProvider({ children }: { children: React.ReactNode }) {
                 required
                 maxLength={120}
                 autoComplete="organization"
-                className="w-full rounded-xl border-2 border-ink/15 bg-cream-bright px-4 py-3 text-base placeholder:text-ink-faint focus:border-brand"
-                placeholder="Rivera Plumbing"
+                className="w-full rounded-xl border-2 border-ink/15 bg-cream-bright px-4 py-3 text-base focus:border-brand"
               />
             </div>
             <div>
@@ -161,7 +159,7 @@ export function LeadModalProvider({ children }: { children: React.ReactNode }) {
                 required
                 autoComplete="tel"
                 inputMode="tel"
-                className="w-full rounded-xl border-2 border-ink/15 bg-cream-bright px-4 py-3 text-base placeholder:text-ink-faint focus:border-brand"
+                className="w-full rounded-xl border-2 border-ink/15 bg-cream-bright px-4 py-3 text-base placeholder:text-ink-faint/50 focus:border-brand"
                 placeholder="(919) 555-0142"
               />
             </div>

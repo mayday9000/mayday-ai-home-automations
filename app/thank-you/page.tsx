@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Keep your phone nearby — Mayday AI",
+  title: "Keep your phone nearby | Mayday AI",
   robots: { index: false },
 };
 
@@ -25,12 +25,12 @@ export default function ThankYou() {
         </p>
 
         <h1 className="mx-auto mt-6 max-w-3xl font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">
-          Keep your phone nearby — you&rsquo;re getting a call in the next{" "}
+          Keep your phone nearby. You&rsquo;re getting a call in the next{" "}
           <span className="text-brand">60 seconds.</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-          The voice on that call is our AI receptionist — the same one that would answer your
+          The voice on that call is our AI receptionist, the same one that would answer your
           customers. Ask it anything you&rsquo;d expect a caller to ask you: pricing, availability,
           booking. Try to stump it.
         </p>
@@ -38,7 +38,7 @@ export default function ThankYou() {
         <div className="mx-auto mt-10 max-w-md rounded-2xl border border-ink/10 bg-cream-bright p-6 text-left shadow-card">
           <h2 className="font-display text-lg font-bold">While you wait</h2>
           <ul className="mt-3 space-y-2 text-ink-soft">
-            <li>· Unknown number? That&rsquo;s us — pick up.</li>
+            <li>· Unknown number? That&rsquo;s us. Pick up.</li>
             <li>· Notice how fast it answers. Your callers get the same.</li>
             <li>· Think of your hardest customer question and ask it.</li>
           </ul>

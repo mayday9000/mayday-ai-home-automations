@@ -11,7 +11,7 @@ export function SiteHeader() {
         className="group flex items-center gap-2 text-sm font-semibold text-ink-soft hover:text-brand sm:text-base"
       >
         <PhoneIcon />
-        <span className="hidden sm:inline">Our AI answers —&nbsp;</span>
+        <span className="hidden sm:inline">Our AI answers:&nbsp;</span>
         {PHONE_DISPLAY}
       </a>
     </header>

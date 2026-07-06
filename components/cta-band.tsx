@@ -21,7 +21,7 @@ export function CtaBand({ proof, tone = "light" }: { proof: string; tone?: "ligh
         className={`inline-flex items-center gap-2 text-base font-semibold underline underline-offset-4 ${linkColor}`}
       >
         <PhoneIcon />
-        Or call us now — our AI answers: {PHONE_DISPLAY}
+        Or call us now. Our AI answers: {PHONE_DISPLAY}
       </a>
       <p className={`text-sm ${proofColor}`}>{proof}</p>
     </div>

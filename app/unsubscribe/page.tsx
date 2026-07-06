@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { UnsubscribeFlow } from "./unsubscribe-flow";
 
 export const metadata: Metadata = {
-  title: "Unsubscribe — Mayday AI",
+  title: "Unsubscribe | Mayday AI",
   robots: { index: false },
 };
 

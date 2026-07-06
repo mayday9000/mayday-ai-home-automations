@@ -4,11 +4,11 @@ import { CtaBand } from "../cta-band";
 const FAQS = [
   {
     q: "We don't want a robot answering our phones.",
-    a: "Neither do we — nobody wants a “press 1” phone tree. But the honest comparison isn't the AI versus your best person; it's the AI versus voicemail, because voicemail is who answers when you can't. Mayday sounds natural, holds a real conversation, and hands off to a human the moment one is needed. You'll hear it before your customers ever do — the demo call on this page is the exact experience.",
+    a: "Neither do we. Nobody wants a “press 1” phone tree. But the honest comparison isn't the AI versus your best person; it's the AI versus voicemail, because voicemail is who answers when you can't. Mayday sounds natural, holds a real conversation, and hands off to a human the moment one is needed. You'll hear it before your customers ever do: the demo call on this page is the exact experience.",
   },
   {
     q: "We already have an answering service.",
-    a: "Good — that means you already agree missed calls cost money. But an answering service takes a message, and the lead still sits in a callback pile while they keep calling your competitors. Mayday answers instantly at 2am on a Sunday, answers real questions about your business, and books the appointment on the spot instead of adding to tomorrow morning's list.",
+    a: "Good. That means you already agree missed calls cost money. But an answering service takes a message, and the lead still sits in a callback pile while they keep calling your competitors. Mayday answers instantly at 2am on a Sunday, answers real questions about your business, and books the appointment on the spot instead of adding to tomorrow morning's list.",
   },
   {
     q: "What if it messes up a customer call?",
@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: "Is it worth the monthly cost?",
-    a: "Run your own numbers in the calculator above. At a deliberately conservative capture rate, two to three recovered jobs or appointments a month typically pays for the system several times over — everything past that is margin. And the guarantee caps the risk: if it doesn't capture every after-hours lead from day one, you don't pay the monthly until it does.",
+    a: "Run your own numbers in the calculator above. At a deliberately conservative capture rate, two to three recovered jobs or appointments a month typically pays for the system several times over. Everything past that is margin. And the guarantee caps the risk: if it doesn't capture every after-hours lead from day one, you don't pay the monthly until it does.",
   },
 ];
 

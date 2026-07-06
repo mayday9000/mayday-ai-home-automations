@@ -3,7 +3,7 @@ import { CtaBand } from "../cta-band";
 const LEAK_MOMENTS = [
   {
     title: "After 5pm & weekends",
-    body: "The burst pipe at 9pm. The toothache on a Sunday. Emergencies don't check your business hours — they go to whoever answers first.",
+    body: "The burst pipe at 9pm. The toothache on a Sunday. Emergencies don't check your business hours. They go to whoever answers first.",
   },
   {
     title: "While you're with a customer",
@@ -25,7 +25,7 @@ export function Problem() {
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-center text-lg leading-relaxed text-cream/75">
           Nobody leaves voicemails anymore. When your phone goes unanswered, most callers simply
-          dial the next name on the list — and book there instead.
+          dial the next name on the list and book there instead.
         </p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -38,14 +38,14 @@ export function Problem() {
         </div>
 
         <p className="mx-auto mt-12 max-w-2xl text-center text-lg leading-relaxed text-cream/85">
-          You already paid to make that phone ring — the ads, the reviews, the referrals.
+          You already paid to make that phone ring: the ads, the reviews, the referrals.
           <strong className="text-cream-bright"> Missing the call means paying for the lead twice:
           once to get it, once to lose it.</strong>
         </p>
 
         <CtaBand
           tone="dark"
-          proof="Mayday picks up in seconds, 24/7 — before the caller gives up and dials the next name."
+          proof="Mayday picks up in seconds, 24/7, before the caller gives up and dials the next name."
         />
       </div>
     </section>

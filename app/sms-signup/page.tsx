@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SmsSignupForm } from "./sms-signup-form";
 
 export const metadata: Metadata = {
-  title: "Text Notifications Signup — Mayday AI",
+  title: "Text Notifications Signup | Mayday AI",
   robots: { index: false },
 };
 
