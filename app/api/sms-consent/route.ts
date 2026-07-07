@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
     if (process.env.NODE_ENV === "production") {
       console.error("sms-consent: DATABASE_URL not configured in production");
       return NextResponse.json(
-        { error: "Signup is temporarily unavailable. Please email masondavisai@gmail.com." },
+        { error: "Signup is temporarily unavailable. Please email admin@maydayautomation.com." },
         { status: 503 },
       );
     }

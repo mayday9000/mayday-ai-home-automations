@@ -4,7 +4,7 @@ export const PHONE_TEL = "+19842543638";
 
 export const SITE_NAME = "Mayday AI";
 export const SITE_URL = "https://maydayautomation.com";
-export const CONTACT_EMAIL = "masondavisai@gmail.com";
+export const CONTACT_EMAIL = "admin@maydayautomation.com";
 export const TAGLINE = "We handle the busywork. You handle what matters.";
 
 /** The one primary CTA label, repeated verbatim after every section. */

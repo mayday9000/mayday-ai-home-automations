@@ -32,7 +32,7 @@ export function LegalContact() {
       <br />
       Cary, North Carolina
       <br />
-      Email: masondavisai@gmail.com
+      Email: admin@maydayautomation.com
       <br />
       Phone: 919-244-3451
     </p>
