@@ -20,6 +20,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
+  // Honeypot: humans never see this field. A filled value means a bot, and a
+  // forwarded bot submission would place a real outbound call. Report success
+  // so the bot learns nothing, forward nowhere.
+  if (typeof body === "object" && body !== null && (body as Record<string, unknown>)["company_site"]) {
+    return NextResponse.json({ ok: true });
+  }
+
   const parsed = leadSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
@@ -30,20 +37,37 @@ export async function POST(req: NextRequest) {
 
   const lead = parsed.data;
   const { ip, userAgent } = clientMeta(req);
-  const submittedAt = new Date().toISOString();
 
-  // Sink 1: webhook that triggers the AI callback (the actual demo).
+  // Sink 1: the lead-intake webhook that triggers the AI callback (the demo).
+  // Payload follows the lead-intake contract; the shared secret stays
+  // server-side in an env var, never in browser code.
   const webhookUrl = process.env.LEAD_WEBHOOK_URL;
+  const webhookSecret = process.env.LEAD_INTAKE_SECRET;
   let webhookOk = false;
   if (webhookUrl) {
     try {
       const res = await fetch(webhookUrl, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...lead, source: "landing-page", submittedAt, ip, userAgent }),
+        headers: {
+          "Content-Type": "application/json",
+          ...(webhookSecret ? { "x-lead-intake-secret": webhookSecret } : {}),
+        },
+        body: JSON.stringify({
+          name: lead.name,
+          phone: lead.phone,
+          message: `Business: ${lead.business}`,
+          source: "website_form",
+        }),
         signal: AbortSignal.timeout(8000),
       });
       webhookOk = res.ok;
+      if (res.status === 400) {
+        // Intake rejected the phone number; let the visitor correct it.
+        return NextResponse.json(
+          { error: "That phone number didn't go through. Double-check it and try again." },
+          { status: 400 },
+        );
+      }
       if (!res.ok) console.error(`Lead webhook responded ${res.status}`);
     } catch (err) {
       console.error("Lead webhook failed:", err);
