@@ -19,7 +19,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "My listings get marketed without me touching a thing, so my time goes to clients and showings instead. Let's take it to another level. My team members will want the same system once they see this one.",
+      "My listings get marketed without me touching a thing, so my time goes to clients and showings instead. My team members will want the same system once they see this one.",
     name: "Jazz Gill",
     detail: "Real Estate Agent, Canada",
   },
