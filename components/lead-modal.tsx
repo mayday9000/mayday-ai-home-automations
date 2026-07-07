@@ -62,6 +62,7 @@ export function LeadModalProvider({ children }: { children: React.ReactNode }) {
       name: String(data.get("name") ?? ""),
       business: String(data.get("business") ?? ""),
       phone: String(data.get("phone") ?? ""),
+      company_site: String(data.get("company_site") ?? ""),
     };
 
     const digits = payload.phone.replace(/\D/g, "");
@@ -120,6 +121,17 @@ export function LeadModalProvider({ children }: { children: React.ReactNode }) {
           </p>
 
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+            {/* Honeypot: hidden from humans; bots that fill it are dropped server-side. */}
+            <div aria-hidden="true" className="absolute -left-[9999px] top-0 h-0 w-0 overflow-hidden">
+              <label htmlFor="lead-company-site">Company website</label>
+              <input
+                id="lead-company-site"
+                name="company_site"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
             <div>
               <label htmlFor="lead-name" className="mb-1.5 block text-sm font-semibold">
                 Your name
