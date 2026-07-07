@@ -11,11 +11,11 @@ export function SiteFooter() {
           <p className="mt-2 max-w-xs text-sm text-ink-soft">{TAGLINE}</p>
           <p className="mt-4 text-sm text-ink-soft">Cary, North Carolina</p>
         </div>
-        <nav aria-label="Footer" className="grid grid-cols-2 gap-x-12 gap-y-2 text-sm">
+        <nav aria-label="Footer" className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2 sm:gap-x-12">
           <a href="/privacy" className="text-ink-soft hover:text-brand">Privacy Policy</a>
           <a href="/terms" className="text-ink-soft hover:text-brand">Terms of Service</a>
           <a href="/sms-signup" className="text-ink-soft hover:text-brand">Text Notifications</a>
-          <a href={`mailto:${CONTACT_EMAIL}`} className="text-ink-soft hover:text-brand">{CONTACT_EMAIL}</a>
+          <a href={`mailto:${CONTACT_EMAIL}`} className="break-words text-ink-soft hover:text-brand">{CONTACT_EMAIL}</a>
           <a href={`tel:${PHONE_TEL}`} className="text-ink-soft hover:text-brand">{PHONE_DISPLAY}</a>
         </nav>
       </div>

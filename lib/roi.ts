@@ -17,10 +17,13 @@ export interface IndustryPreset {
 export const INDUSTRY_PRESETS: IndustryPreset[] = [
   { key: "plumbing", label: "Plumbing", avgTicket: 400, missedCallsPerWeek: 8, captureRate: 0.25 },
   { key: "hvac", label: "HVAC", avgTicket: 550, missedCallsPerWeek: 8, captureRate: 0.25 },
+  { key: "electrical", label: "Electrical", avgTicket: 400, missedCallsPerWeek: 8, captureRate: 0.25 },
+  { key: "garagedoor", label: "Garage Door", avgTicket: 450, missedCallsPerWeek: 6, captureRate: 0.25 },
+  { key: "cleaning", label: "Cleaning / Power Washing", avgTicket: 250, missedCallsPerWeek: 7, captureRate: 0.25 },
+  { key: "landscaping", label: "Landscaping / Exterior", avgTicket: 300, missedCallsPerWeek: 7, captureRate: 0.25 },
   { key: "dental", label: "Dental / Ortho", avgTicket: 700, missedCallsPerWeek: 6, captureRate: 0.2 },
   { key: "medspa", label: "Med Spa", avgTicket: 350, missedCallsPerWeek: 6, captureRate: 0.25 },
   { key: "legal", label: "Law Firm", avgTicket: 1500, missedCallsPerWeek: 5, captureRate: 0.15 },
-  { key: "landscaping", label: "Landscaping / Exterior", avgTicket: 300, missedCallsPerWeek: 7, captureRate: 0.25 },
   { key: "other", label: "Other Service Business", avgTicket: 350, missedCallsPerWeek: 6, captureRate: 0.25 },
 ];
 

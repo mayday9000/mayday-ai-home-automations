@@ -4,10 +4,12 @@ import { useEffect, useState } from "react";
 
 const INDUSTRIES = [
   "plumbing company",
+  "electrical company",
   "dental office",
   "med spa",
   "law firm",
   "HVAC company",
+  "cleaning company",
   "landscaping crew",
 ];
 
@@ -42,21 +44,7 @@ export function RotatingIndustry() {
   return (
     <>
       <span className="sr-only">Your business</span>
-
-      {/* Mobile: inline phrase box */}
-      <span aria-hidden="true" className="sm:hidden">
-        Your{" "}
-        <span className="inline-grid justify-items-center align-baseline">
-          {INDUSTRIES.map((phrase, i) => (
-            <span key={phrase} className={`${itemClass(i === index)} text-brand`}>
-              {phrase}
-            </span>
-          ))}
-        </span>
-      </span>
-
-      {/* Desktop: full centered line per variant */}
-      <span aria-hidden="true" className="hidden sm:grid justify-items-center">
+      <span aria-hidden="true" className="grid justify-items-center">
         {INDUSTRIES.map((phrase, i) => (
           <span key={phrase} className={itemClass(i === index)}>
             Your <span className="text-brand">{phrase}</span>
