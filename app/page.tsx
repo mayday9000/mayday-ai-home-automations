@@ -14,16 +14,19 @@ export default function Home() {
   return (
     <LeadModalProvider>
       <SiteHeader />
-      <main className="pb-20 md:pb-0">
-        <Hero />
-        <Problem />
-        <HowItWorks />
-        <RoiCalculator />
-        <Proof />
-        <Guarantee />
-        <Faq />
-      </main>
-      <SiteFooter />
+      {/* Bottom padding keeps the sticky mobile CTA bar from covering the footer. */}
+      <div className="pb-24 md:pb-0">
+        <main>
+          <Hero />
+          <Problem />
+          <HowItWorks />
+          <RoiCalculator />
+          <Proof />
+          <Guarantee />
+          <Faq />
+        </main>
+        <SiteFooter />
+      </div>
       <StickyCtaBar />
     </LeadModalProvider>
   );

@@ -3,7 +3,17 @@ import { LeadCtaButton } from "../lead-modal";
 import { RotatingIndustry } from "../rotating-word";
 import { PhoneIcon } from "../site-header";
 
-const INDUSTRY_BADGES = ["Plumbing", "HVAC", "Dental", "Med Spa", "Legal", "Landscaping"];
+const INDUSTRY_BADGES = [
+  "Plumbing",
+  "HVAC",
+  "Electrical",
+  "Garage Door",
+  "Cleaning",
+  "Landscaping",
+  "Dental",
+  "Med Spa",
+  "Legal",
+];
 
 export function Hero() {
   return (
@@ -12,7 +22,7 @@ export function Hero() {
         24/7 call answering for service businesses
       </p>
 
-      <h1 className="mx-auto max-w-4xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+      <h1 className="mx-auto max-w-4xl font-display text-[clamp(1.45rem,7.2vw,2.25rem)] font-extrabold leading-[1.1] tracking-tight sm:text-6xl sm:leading-[1.05] lg:text-7xl">
         <RotatingIndustry /> never misses a call again.
       </h1>
 

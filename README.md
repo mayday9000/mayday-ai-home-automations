@@ -34,7 +34,6 @@ One-time DB setup: `psql "$DATABASE_URL" -f db/schema.sql`
 
 ## TODOs before launch
 
-- Replace the placeholder phone number in `lib/config.ts` (single source of truth) with the purchased Twilio number.
 - Fill the three testimonial slots in `components/sections/proof.tsx` (bracketed placeholders).
 - Set the calendar fallback URL in `app/thank-you/page.tsx`.
 - Set `LEAD_WEBHOOK_URL` and `DATABASE_URL` in Vercel.

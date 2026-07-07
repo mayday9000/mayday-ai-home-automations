@@ -1,7 +1,6 @@
-// TODO: replace with the Twilio number once purchased. Single source of truth
-// for the phone number everywhere on the site.
-export const PHONE_DISPLAY = "(919) 555-0199";
-export const PHONE_TEL = "+19195550199";
+// Single source of truth for the phone number everywhere on the site.
+export const PHONE_DISPLAY = "(984) 254-3638";
+export const PHONE_TEL = "+19842543638";
 
 export const SITE_NAME = "Mayday AI";
 export const SITE_URL = "https://maydayautomation.com";
