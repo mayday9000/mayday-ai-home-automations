@@ -9,28 +9,25 @@ const WORKED_WITH = [
   "Creators & Media",
 ];
 
-/*
- * PLACEHOLDER SLOTS — replace quote/name/detail with real client testimonials.
- * Bracketed text renders as an obvious to-fill slot, not fake social proof.
- */
-const TESTIMONIAL_SLOTS = [
+// Client-approved testimonials.
+const TESTIMONIALS = [
   {
     quote:
-      "[Testimonial slot: e.g. how many after-hours calls Mayday answered in the first month, and what that meant in booked work.]",
-    name: "[Client name]",
-    detail: "Owner, home services company",
+      "I'm on jobs all day. I used to lose my evenings to admin work after cleaning windows. Now most of it's handled for me, and it's more accurate than when I did it myself.",
+    name: "Ryan",
+    detail: "Owner, Windows By Ryan, Cary, NC",
   },
   {
     quote:
-      "[Testimonial slot: e.g. front-desk experience, what changed during lunch rushes and double-ring moments.]",
-    name: "[Client name]",
-    detail: "Practice manager, dental / med spa",
+      "My listings get marketed without me touching a thing, so my time goes to clients and showings instead. Let's take it to another level. My team members will want the same system once they see this one.",
+    name: "Jazz Gill",
+    detail: "Real Estate Agent, Canada",
   },
   {
     quote:
-      "[Testimonial slot: e.g. intake result, consultations booked from calls that used to hit voicemail.]",
-    name: "[Client name]",
-    detail: "Partner, professional services firm",
+      "The research and prep that used to eat up my filming weeks is done before I sit down. I started with one agent, and I keep commissioning more.",
+    name: "Braden Langley",
+    detail: "Langley Firearms, YouTube",
   },
 ];
 
@@ -54,14 +51,14 @@ export function Proof() {
         </ul>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {TESTIMONIAL_SLOTS.map((slot) => (
-            <figure key={slot.detail} className="flex flex-col justify-between rounded-2xl border border-ink/10 bg-cream p-7 shadow-card">
+          {TESTIMONIALS.map((t) => (
+            <figure key={t.detail} className="flex flex-col justify-between rounded-2xl border border-ink/10 bg-cream p-7 shadow-card">
               <blockquote className="leading-relaxed text-ink-soft">
-                &ldquo;{slot.quote}&rdquo;
+                &ldquo;{t.quote}&rdquo;
               </blockquote>
               <figcaption className="mt-6 border-t border-ink/10 pt-4">
-                <p className="font-bold">{slot.name}</p>
-                <p className="text-sm text-ink-faint">{slot.detail}</p>
+                <p className="font-bold">{t.name}</p>
+                <p className="text-sm text-ink-faint">{t.detail}</p>
               </figcaption>
             </figure>
           ))}
