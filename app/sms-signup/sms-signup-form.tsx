@@ -85,7 +85,7 @@ export function SmsSignupForm() {
         type="tel"
         autoComplete="tel"
         error={errors.phone}
-        placeholder="(919) 555-1234"
+        placeholder="(984) 555-1234"
       />
       <Field id="email" label="Email" type="email" autoComplete="email" error={errors.email} />
       <Field

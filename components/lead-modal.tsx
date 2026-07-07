@@ -160,7 +160,7 @@ export function LeadModalProvider({ children }: { children: React.ReactNode }) {
                 autoComplete="tel"
                 inputMode="tel"
                 className="w-full rounded-xl border-2 border-ink/15 bg-cream-bright px-4 py-3 text-base placeholder:text-ink-faint/50 focus:border-brand"
-                placeholder="(919) 555-0142"
+                placeholder="(984) 555-0142"
               />
             </div>
 
