@@ -54,7 +54,7 @@ export default function Privacy() {
       <p>
         We retain personal information for as long as needed to provide our services and as
         required by law. You may request deletion of your personal information at any time by
-        emailing masondavisai@gmail.com.
+        emailing admin@maydayautomation.com.
       </p>
 
       <h2>Your Rights</h2>
@@ -66,7 +66,7 @@ export default function Privacy() {
         <li>Opt out of communications</li>
         <li>Object to or restrict certain processing</li>
       </ul>
-      <p>To exercise any of these rights, email masondavisai@gmail.com.</p>
+      <p>To exercise any of these rights, email admin@maydayautomation.com.</p>
 
       <h2>Security</h2>
       <p>
